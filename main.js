@@ -10,7 +10,7 @@ function enviar() {
     // arrayAlunos.push(nome2);
     // arrayAlunos.push(nome3);
     // arrayAlunos.push(nome4);
-    var arrayHTML = [];
+    var arrayTela = [];
 
     for (var cont=1; cont<=4; cont++) {
         var nome;
@@ -24,10 +24,10 @@ function enviar() {
     var tamanhoArray = arrayAlunos.length;
 
     for (var i=0; i<tamanhoArray; i++) {
-        arrayHTML.push("<h4>" + arrayAlunos[i] + "</h4>");
+        arrayTela.push("<h4>" + arrayAlunos[i] + "</h4>");
     }
 
-    console.log(arrayHTML);
+    console.log(arrayTela);
 
     document.getElementById("btnEnviar").style.display = "none";
     document.getElementById("btnOrganizar").style.display = "inline-block";
