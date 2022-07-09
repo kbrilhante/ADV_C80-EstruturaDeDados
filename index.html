@@ -15,35 +15,13 @@
     
 </head>
 <body>
-    <h3>Lista de Alunos na Minha Sala</h3>
+    <h1>Lista de Convidados</h1>
+    <hr>
     <div>
-        <span>1</span>
-        <input id="aluno1" type="text" placeholder="Nome do Aluno">
-        <br>
-
-        <span>2</span>
-        <input id="aluno2" type="text" placeholder="Nome do Aluno">
-        <br>
-
-        <span>3</span>
-        <input id="aluno3" type="text" placeholder="Nome do Aluno">
-        <br>
-
-        <span>4</span>
-        <input id="aluno4" type="text" placeholder="Nome do Aluno">
-        <br>
+        <input id="convidado" type="text" placeholder="Nome do convidado">
+        <button id="btnEnviar" onclick="enviar()" type="button">
+            Enviar
+        </button>
     </div>
-
-    <button onclick="enviar()" id="btnEnviar">
-        Enviar
-    </button>
-
-    <div id="mostraNomes">
-
-    </div>
-
-    <button onclick="organizar()" id="btnOrganizar">
-        Organizar
-    </button>
 </body>
 </html>
