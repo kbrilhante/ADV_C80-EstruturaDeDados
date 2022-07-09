@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 
-h1, h3 {
+h3 {
     margin: 20px;
 }
 
@@ -11,5 +11,15 @@ input {
 }
 
 #btnEnviar {
-    margin: 10px;
+    margin: 20px;
+}
+
+#mostraNomes {
+    font-weight: bold;
+    margin: 20px;
+}
+
+#btnOrganizar {
+    display: none;
+    margin: 20px;
 }
