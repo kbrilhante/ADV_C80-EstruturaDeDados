@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+h3 {
+    margin: 20px;
+}
+
+input {
+    margin: 10px;
+}
+
+#btnEnviar {
+    margin: 20px;
+}
+
+#mostraNomes {
+    font-weight: bold;
+    margin: 20px;
+}
+
+#btnOrganizar {
+    display: none;
+    margin: 20px;
+}
