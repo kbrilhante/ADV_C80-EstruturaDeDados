@@ -1,7 +1,4 @@
 var arrayAlunos = [];
 
 var nome = [];
-function enviar() {
-    
-}
-
+function enviar() {}
