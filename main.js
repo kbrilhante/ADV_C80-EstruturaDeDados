@@ -10,7 +10,6 @@ function enviar() {
     // arrayAlunos.push(nome2);
     // arrayAlunos.push(nome3);
     // arrayAlunos.push(nome4);
-    var arrayTela = [];
 
     for (var cont=1; cont<=4; cont++) {
         var nome;
@@ -21,13 +20,7 @@ function enviar() {
 
     console.log(arrayAlunos);
     
-    var tamanhoArray = arrayAlunos.length;
-
-    for (var i=0; i<tamanhoArray; i++) {
-        arrayTela.push("<h4>" + arrayAlunos[i] + "</h4>");
-    }
-
-    console.log(arrayTela);
+    escreveHTML();
 
     document.getElementById("btnEnviar").style.display = "none";
     document.getElementById("btnOrganizar").style.display = "inline-block";
@@ -36,5 +29,24 @@ function enviar() {
 function organizar() {
     arrayAlunos.sort();
     console.log(arrayAlunos);
-    document.getElementById("mostraNomes").innerHTML = arrayAlunos;
+
+    // document.getElementById("mostraNomes").innerHTML = arrayAlunos;
+    escreveHTML();
+}
+
+function escreveHTML() {
+    var tamanhoArray = arrayAlunos.length;
+    var arrayHTML = [];
+    var html = "";
+
+    for (var i=0; i<tamanhoArray; i++) {
+        arrayHTML.push("<h4>Nome - " + arrayAlunos[i] + "</h4>");
+    }
+
+    console.log(arrayHTML);
+
+    html = arrayHTML.join("");
+    console.log(html);
+
+    document.getElementById("mostraNomes").innerHTML = html;
 }
